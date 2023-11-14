@@ -1,0 +1,124 @@
+:root {
+  --primary-text-color: rgba(0, 0, 0, 0.8);
+  --title-text-color: #000000;
+  --primary-white-color: #ffffff;
+  --accent-color: #18a0fb;
+  --primary-font-family: Montserrat, sans-serif;
+  --secondary-font-family: Comfortaa, sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+  font-family: var(--primary-font-family);
+}
+
+/* Components */
+.button {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.225px;
+}
+.button.theme-blue {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.button.theme-white {
+  color: var(--accent-color);
+  background-color: var(--primary-white-color);
+}
+
+.section-title {
+  color: var(--title-text-color);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.72px;
+}
+
+.title {
+  color: var(--title-text-color);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: -0.36px;
+}
+
+.subtitle {
+  color: var(--primary-text-color);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.39;
+  letter-spacing: -0.54px;
+}
+
+.section-description {
+  color: var(--primary-text-color);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.67;
+  letter-spacing: -0.27px;
+}
+
+.logo-text {
+  color: var(--title-text-color);
+  font-family: var(--secondary-font-family);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.14;
+  letter-spacing: -0.427px;
+}
+.logo-text:hover {
+  color: var(--accent-color);
+}
+
+/* Header */
+.site-nav .link {
+  color: var(--accent-color);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.225px;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--title-text-color);
+}
+.site-nav .link.current {
+  color: var(--title-text-color);
+}
+
+/* Hero */
+.hero-title {
+  color: var(--title-text-color);
+  text-align: center;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: -0.84px;
+}
+
+/* Advantages */
+
+/* Work examples */
+
+/* Testomonials */
+
+/* Signup */
+
+/* Footer */
+.footer .link {
+  color: var(--title-text-color);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: -0.225px;
+}
