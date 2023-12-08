@@ -2,15 +2,35 @@
   --primary-text-color: rgba(0, 0, 0, 0.8);
   --title-text-color: #000000;
   --primary-white-color: #ffffff;
+  --secondary-bg-color: #f5f5f5;
   --accent-color: #18a0fb;
   --primary-font-family: Montserrat, sans-serif;
   --secondary-font-family: Comfortaa, sans-serif;
 }
+
 ul {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 a {
   text-decoration: none;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.container {
+  outline: 2px solid red;
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 body {
   color: var(--primary-text-color);
@@ -20,11 +40,16 @@ body {
 
 /* Components */
 .button {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 11px 34px;
+  min-width: 130px;
+
   text-align: center;
   font-size: 15px;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: -0.225px;
 }
 .button.theme-blue {
   color: var(--primary-white-color);
@@ -34,14 +59,31 @@ body {
 .button.theme-white {
   color: var(--accent-color);
   background-color: var(--primary-white-color);
+  border-color: var(--accent-color);
+}
+
+.section {
+  outline: 3px solid blueviolet;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.section.no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .section-title {
+  margin-bottom: 60px;
   color: var(--title-text-color);
   font-size: 48px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: -0.72px;
+}
+
+.section-title.centered {
+  text-align: center;
 }
 
 .title {
@@ -52,20 +94,20 @@ body {
   letter-spacing: -0.36px;
 }
 
-.subtitle {
+.section-description {
+  margin-top: 0;
+  margin-bottom: 80px;
   color: var(--primary-text-color);
   font-size: 36px;
   font-weight: 400;
   line-height: 1.39;
-  letter-spacing: -0.54px;
 }
 
-.section-description {
+.section-text {
   color: var(--primary-text-color);
   font-size: 18px;
   font-weight: 400;
   line-height: 1.67;
-  letter-spacing: -0.27px;
 }
 
 .logo-text {
@@ -96,8 +138,25 @@ body {
   color: var(--title-text-color);
 }
 
+/* .auth-nav .button.theme-blue {
+  display: inline-block;
+  padding: 11px 34px;
+
+  border-radius: 6px;
+  background-color: var(--accent-color);
+
+  min-width: 130px;
+  height: 40px;
+} */
+
 /* Hero */
+.hero {
+  outline: 3px solid blueviolet;
+  text-align: center;
+}
+
 .hero-title {
+  margin-bottom: 40px;
   color: var(--title-text-color);
   text-align: center;
   font-size: 56px;
@@ -107,8 +166,29 @@ body {
 }
 
 /* Advantages */
-
 /* Work examples */
+.advantages.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.features-list .title,
+.work-list .title {
+  margin-bottom: 24px;
+}
+
+.features-list .section-text {
+  margin-bottom: 32px;
+}
+
+.work-list > .item {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.work-list > .item:nth-child(2n) {
+  background-color: var(--secondary-bg-color);
+}
 
 /* Testomonials */
 
